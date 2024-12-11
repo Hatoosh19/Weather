@@ -3,7 +3,7 @@ const months = ["January", "February", "March", "April", "May", "June", "July", 
 var showdata = document.getElementById('showData');
 console.log(showdata);
 async function search(a) {
-    let respone = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=667e0b9f292a4a1ab48125730240912&q=${a}&days=3`);
+    let respone = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=667e0b9f292a4a1ab48125730240912&q=${a}&days=3`);
     if (respone.ok && 400 != respone.status) {
         let data = await respone.json();
         
